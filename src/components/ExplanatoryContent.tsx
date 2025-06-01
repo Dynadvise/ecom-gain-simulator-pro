@@ -1,11 +1,37 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Lightbulb, Target, TrendingUp, Zap } from 'lucide-react';
+import { Lightbulb, Target, TrendingUp, Zap, ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export const ExplanatoryContent: React.FC = () => {
   return (
     <div className="space-y-6">
+      {/* Dynadvise Return Section - Single Line */}
+      <div className="bg-white border border-gray-200 rounded-lg py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center gap-4">
+            <img 
+              src="/lovable-uploads/0ca3b414-56fc-462c-9499-3d5be9156a83.png" 
+              alt="Dynadvise Logo" 
+              className="h-8 w-auto"
+            />
+            <span className="text-gray-600">Revenir au site Dynadvise</span>
+            <Button asChild size="sm">
+              <a 
+                href="https://dynadvise.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Visiter Dynadvise.com
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
       <Card className="bg-gradient-to-r from-blue-50 to-teal-50 border-ecommerce-teal/20">
         <CardContent className="p-6">
           <div className="space-y-6">
