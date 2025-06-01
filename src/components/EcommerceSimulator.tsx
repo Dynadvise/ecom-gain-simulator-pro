@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { SimulatorForm } from './SimulatorForm';
 import { SimulatorResults } from './SimulatorResults';
@@ -60,7 +61,7 @@ export const EcommerceSimulator: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">
-              Simulateur de Gains E-Commerce
+              Simulateur de gains CRO
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
               Découvrez le potentiel d'augmentation de votre chiffre d'affaires 
