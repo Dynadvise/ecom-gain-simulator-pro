@@ -1,9 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { SimulatorForm } from './SimulatorForm';
 import { SimulatorResults } from './SimulatorResults';
 import { ExplanatoryContent } from './ExplanatoryContent';
 import { calculateSimulatorResults, validateInput, SimulatorInputs } from '@/utils/ecommerceCalculations';
+import { Button } from '@/components/ui/button';
+import { ArrowLeft } from 'lucide-react';
 
 export const EcommerceSimulator: React.FC = () => {
   const [inputs, setInputs] = useState<SimulatorInputs>({
@@ -115,6 +116,35 @@ export const EcommerceSimulator: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      {/* Dynadvise Return Section */}
+      <div className="bg-white border-t border-gray-200 py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <img 
+              src="/lovable-uploads/0ca3b414-56fc-462c-9499-3d5be9156a83.png" 
+              alt="Dynadvise Logo" 
+              className="h-12 w-auto"
+            />
+            <div className="text-center md:text-left">
+              <p className="text-gray-600 mb-3">
+                Revenir au site Dynadvise
+              </p>
+              <Button asChild>
+                <a 
+                  href="https://dynadvise.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  Visiter Dynadvise.com
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
